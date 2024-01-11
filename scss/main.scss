@@ -1,0 +1,481 @@
+@import "app/fonts";
+@import "app/app";
+@import "app/header";
+@import "app/darkheader";
+
+.body, button, input, a, p, b, h1, h2, h3, h4, h5, h6, ul, li, a, p, span, div, textarea{
+    font-family: 'Montserrat Regular';
+    font-style: normal;
+    font-size: var(--fs);
+}
+
+body{
+    background-image: url(../img/bodyBg.png);
+}
+
+// .main{
+//     overflow: hidden;
+// }
+
+h1, h2, h3, h4, h5, h6, ul, li, a, p, video{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+.home{
+    margin-bottom: calc(7.5 * var(--offset));
+}
+
+.home__content{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home__right--info{
+    position: relative;
+}
+
+.home__img{
+    position: relative;
+}
+
+.home__img--top{
+    position: absolute;
+    left: 80%;
+    bottom: 80%;
+    animation: durak 2.2s linear infinite;
+}
+
+@keyframes durak{
+    10%{
+        transform: rotate(0) scale(1.1);
+    }
+
+    50%{
+        transform: rotate(25deg) scale(1.1);
+    }
+
+    100%{
+        transform: rotate(0) scale(1.1);
+    }
+}
+
+.home__img--bot{
+    position: absolute;
+    right: 80%;
+    top: 80%;
+}
+
+.home__left{
+    display: flex;
+    align-items: center;
+}
+
+.home__left--info{
+    display: flex;
+    flex-direction: column;
+    gap: calc(5 * var(--offset));
+}
+
+.home__left--top{
+    display: flex;
+    flex-direction: column;
+    gap: calc(1.5 * var(--offset));
+}
+
+.home__header, .home__text{
+    color: var(--c1);
+}
+
+.home__header{
+    font-size: calc(3 * var(--fs));
+    letter-spacing: 2px;
+    font-family: "Dela Gothic One";
+}
+
+.home__go{
+    font-size: calc(3 * var(--fs));
+    letter-spacing: 2px;
+    font-family: "Dela Gothic One";
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: var(--c2);
+    -webkit-text-stroke-width: calc(0.1 * var(--offset));
+}
+
+.home__text{
+    background-image: url(../img/textBg.png);
+    color: var(--c2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0 5% 0;
+    width: 95%;
+    border-radius: calc(0.6 * var(--offset));
+}
+
+.home__btn, .about__btn{
+    background: var(--c2);
+    font-family: "Montserrat Bold";
+    color: var(--c3);
+    border: none;
+    padding: calc(1.3 * var(--offset)) calc(2 * var(--offset));
+    border-radius: calc(0.75 * var(--offset));
+    cursor: pointer;
+}
+
+.home__razor{
+    position: absolute;
+    right: 50%;
+}
+
+.features__img--top{
+    img{
+        width: 100%;
+        margin-bottom: -1.2%;
+    }
+}
+
+.features__img--bot{
+    img{
+        width: 100%;
+        margin-bottom: calc(5 * var(--offset));
+    }
+}
+
+.features__info{
+    background-color: var(--c1);
+    height: 60vh;
+}
+
+.features__header{
+    font-family: "Dela Gothic One";
+    text-align: center;
+    font-size: calc(1.75 * var(--fs));
+    margin-bottom: calc(6 * var(--offset));
+}
+
+.features__card{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features__item{
+    display: flex;
+    align-items: center;
+    gap: calc(1 * var(--offset));
+}
+
+.features__item--left{
+    h2{
+        font-family: "Dela Gothic One";
+        font-size: calc(6 * var(--fs));
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-color: var(--c3);
+        -webkit-text-stroke-width: calc(0.05 * var(--offset));
+    }
+}
+
+.features__item--right{
+    display: flex;
+    flex-direction: column;
+    gap: calc(1 * var(--offset));
+
+    b{
+        font-family: "Dela Gothic One";
+        width: calc(13 * var(--offset));
+        font-size: calc(0.8 * var(--fs));
+    }
+
+    p{
+        width: calc(18 * var(--offset));
+        font-size: calc(0.85 * var(--offset));
+    }
+}
+
+.offers__man{
+    img{
+        position: absolute;
+        left: -2%;
+        bottom: 0;
+        animation: offerguy 1.5s linear infinite;
+    }
+}
+
+@keyframes offerguy {
+    0%{
+        transform: rotateZ(0);
+    }
+
+    50%{
+        transform: rotateZ(8deg);
+    }
+
+    100%{
+        transform: rotateZ(0);
+    }
+}
+
+.offers__main{
+    color: var(--c1);
+    display: flex;
+    flex-direction: column;
+    gap: calc(2.5 * var(--offset));
+    width: 30%;
+    margin: 0 auto;
+}
+
+.offers__header{
+    font-family: "Dela Gothic One";
+    font-size: calc(1.75 * var(--fs));
+}
+
+.offers__text{
+    background-image: url(../img/textBg.png);
+    color: var(--c2);
+    display: flex;
+    font-size: calc(1.2 * var(--offset));
+    align-items: center;
+    justify-content: center;
+    padding: 4% 0 4% 0;
+    width: 90%;
+    border-radius: calc(0.6 * var(--offset));
+}
+
+.offers__table{
+    color: var(--c3);
+    background-image: url(../img/1111.png);
+    border-radius: calc(0.75 * var(--offset));
+    width: calc(50 * var(--offset));
+    height: calc(25 * var(--offset));
+}
+
+.offers__table--header{
+    font-size: calc(1.1 * var(--fs));
+    font-family: "Dela Gothic One";
+    padding-top: calc(2.5 * var(--offset));
+    padding-bottom: calc(0.75 * var(--offset));
+    width: 83%;
+    margin: 0 auto;
+}
+
+.offers__link{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    color: var(--c3);   
+
+    p{
+        font-size: calc(0.85 * var(--fs));
+    }
+
+    b{
+        font-size: calc(0.9 * var(--fs));
+        font-family: "Dela Gothic One";
+    }
+}
+
+.offers__item{
+    padding: calc(0.65 * var(--offset));
+    transition: 0.3s all ease-in-out;
+
+    &:hover{
+        background-color: var(--c2);
+    }
+}
+
+.offers__price{
+    display: flex;
+    flex-direction: column;
+}
+
+.offers__btn{
+    background: var(--c2);
+    font-family: "Montserrat Bold";
+    color: var(--c3);
+    border: none;
+    padding: calc(1.3 * var(--offset)) calc(2 * var(--offset));
+    margin-left: calc(4 * var(--offset));
+    margin-top: calc(0.75 * var(--offset));
+    border-radius: calc(0.75 * var(--offset));
+}
+
+.offers__table{
+    position: relative;
+}
+
+.offers{
+    height: 85vh;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: calc(12 * var(--offset));
+}
+
+.offers__fun{
+    position: absolute;
+    right: -10%;
+    bottom: 10%;
+    animation: durak 2s linear infinite;
+}
+
+.text__moving{
+    background: var(--c1);
+    padding: calc(0.4 * var(--offset));
+    font-size: calc(1.4 * var(--fs));
+    font-family: "Montserrat Bold";
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 11232131;
+    transform: rotate(-2deg);
+    width: 100%;
+    bottom: 0;
+}
+
+.bg--green{
+    transform: rotate(3deg);
+    z-index: -1;
+    background-color: var(--c2);
+}
+
+
+.about{
+    height: 80vh;
+    overflow: hidden;
+    margin-bottom: calc(3 * var(--offset));
+}
+
+.about__people--left, .about__people--right{
+    position: absolute;
+    overflow: hidden;
+}
+
+.about__people--right{
+    right: 0;
+}
+
+.about__person--1{
+    position: relative;
+    left: -10%;
+}
+
+.about__person--2{
+    position: relative;
+    left: -30%;
+}
+
+.about__person--3{
+    position: relative;
+    right: -30%;
+    z-index: 12345432;
+}
+
+.about__person--4{
+    position: relative;
+    right: -10%;
+}
+
+.about__info{
+    color: var(--c1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: calc(3 * var(--offset));
+}
+
+.about__header{
+    font-size: calc(1.75 * var(--fs));
+    font-family: "Dela Gothic One";
+}
+
+.about__text{
+    display: flex;
+    flex-direction: column;
+    gap: calc(1 * var(--offset));
+
+    p{
+        width: calc(23 * var(--offset));
+        line-height: 2;
+        font-size: calc(0.8 * var(--fs));
+        text-align: center;
+    }
+}
+
+.about__move{
+    background: var(--c1);
+    padding: calc(0.4 * var(--offset));
+    font-size: calc(1.4 * var(--fs));
+    font-family: "Montserrat Bold";
+    text-transform: uppercase;
+    position: relative;
+    transform: rotate(2deg);
+    width: 100%;
+    bottom: -24%;
+}
+
+.master{
+    height: 85vh;
+}
+
+.master__header{
+    font-size: calc(1.75 * var(--fs));
+    color: var(--c1);
+    font-family: "Dela Gothic One";
+    text-align: center;
+    margin-bottom: calc(3 * var(--offset));
+}
+
+.master__content{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.master__slider{
+    display: flex;
+    justify-content: space-between;
+}
+
+.master__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.master__text{
+    background-image: url(../img/m1.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: calc(1.3 * var(--offset));
+    width: calc(25 * var(--offset));
+    border-radius: calc(0.6 * var(--offset));
+    color: var(--c3);
+    padding: calc(2.5 * var(--offset)) calc(2 * var(--offset));
+    width: calc(20 * var(--offset));
+
+    h2{
+        font-family: "Dela Gothic One";
+        font-size: calc(0.9 * var(--fs));
+    }
+
+    b{
+        font-family: "Montserrat Bold";
+        font-size: calc(0.9 * var(--fs));
+    }
+
+    p{
+        font-size: calc(0.9 * var(--fs));
+        line-height: 1.5;
+    }
+}

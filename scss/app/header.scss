@@ -1,0 +1,57 @@
+.header__content{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: calc(3.5 * var(--offset));
+}
+
+.menu__socials{
+    width: calc(2 * var(--offset));
+}
+
+.main__logo{
+    width: calc(10 * var(--offset));
+}
+
+.menu__link{
+    color: var(--c1);
+    font-family: 'Montserrat Regular';
+}
+
+.phone__link{
+    color: var(--c2);
+    font-family: 'Montserrat Bold';
+}
+
+text{
+    font-size: calc(3 * var(--fs));
+    position: absolute;
+    fill: var(--c2);
+    animation: rotate 10s linear infinite;
+    transform-origin: 250px 250px;
+}
+
+.menu__logo{
+    width: calc(2.8 * var(--offset));
+    position: relative;
+}
+
+.nut{
+    position: absolute;
+    left: 46.75%;
+    top: 3%;
+    width: calc(7 * var(--offset));
+}
+
+@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+    }
+}

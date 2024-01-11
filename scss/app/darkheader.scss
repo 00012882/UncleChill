@@ -1,0 +1,57 @@
+.darkheader__content{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.darkmenu{
+    display: flex;
+    align-items: center;
+    gap: calc(3.5 * var(--offset));
+}
+
+.darkmenu__socials{
+    width: calc(2 * var(--offset));
+}
+
+.main__logoblack{
+    width: calc(10 * var(--offset));
+}
+
+.darkmenu__link{
+    color: var(--c3);
+    font-family: 'Montserrat Regular';
+}
+
+.darkphone__link{
+    color: var(--c3);
+    font-family: 'Montserrat Bold';
+}
+
+.darktext{
+    font-size: calc(3 * var(--fs));
+    position: absolute;
+    fill: var(--c3);
+    animation: rotate 10s linear infinite;
+    transform-origin: 250px 250px;
+}
+
+.darkmenu__logo{
+    width: calc(2.8 * var(--offset));
+    position: relative;
+}
+
+.darknut{
+    position: absolute;
+    left: 46.75%;
+    top: 3%;
+    width: calc(7 * var(--offset));
+}
+
+@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+    }
+}
